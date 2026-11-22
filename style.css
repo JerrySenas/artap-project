@@ -1,0 +1,119 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.screen {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg {
+    position: relative;
+    aspect-ratio: 20/9;
+    width: min(100%, 166.667vh);
+    height: auto;
+    max-height: 100%;
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#home-bg {
+    background-image: url("assets/img/home.png");
+}
+
+#body-bg {
+    background-image: url("assets/img/body.jpg");
+}
+
+
+.clickable {
+    position: absolute;
+    cursor: pointer;
+    border: 5px solid white;
+}
+
+#body {
+    left: 15.575%;
+    top: 34.389%;
+    width: 46.6%;
+    height: 65.667%;
+}
+
+
+#textbox {
+    height: 25%;
+    width: 100%;
+    padding: 15px;
+
+    background-color: black;
+    color: white;
+    border: 5px solid white;
+
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-size: 36px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#cards {
+    position: fixed;
+    bottom: 2.5vh;
+    right: 2%;
+    z-index: 1000;
+
+    display: flex;
+    gap: 10px;
+}
+
+#card1, #card2 {
+    position: relative;
+    width: 40px;
+    aspect-ratio: 3/5;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+#card1:hover, #card2:hover {
+    transform: rotateY(180deg);
+}
+
+#card1 #card-front {
+    background-size: contain;
+}
+
+#card2 #card-front {
+    background-size: contain;
+}
+
+#card-front, #card-back {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+#card-front {
+    transform: rotateY(180deg);
+}
+
+#card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(0deg);
+}
