@@ -4,6 +4,63 @@ let isDone = false;
 
 function setDone() { isDone = true; }
 
+const trigger = document.getElementById("gallery-trigger");
+const overlay = document.getElementById("gallery-overlay");
+const images = document.querySelectorAll("#gallery img");
+
+const prev = document.getElementById("prev-image");
+const next = document.getElementById("next-image");
+
+let currentImage = 0;
+
+function showImage(index) {
+    images[currentImage].classList.remove("active");
+
+    currentImage = (index + images.length) % images.length;
+
+    images[currentImage].classList.add("active");
+}
+
+function openGallery() {
+    currentImage = 0;
+    images.forEach(img => img.classList.remove("active"));
+    images[currentImage].classList.add("active");
+
+    overlay.style.display = "flex";
+}
+
+function closeGallery() {
+    overlay.style.display = "none";
+}
+
+trigger.addEventListener("click", openGallery);
+
+prev.addEventListener("click", () => {
+    showImage(currentImage - 1);
+});
+
+next.addEventListener("click", () => {
+    showImage(currentImage + 1);
+});
+
+overlay.addEventListener("click", event => {
+    if (event.target === overlay) {
+        closeGallery();
+    }
+});
+
+document.addEventListener("keydown", event => {
+    if (overlay.style.display !== "flex") return;
+
+    if (event.key === "ArrowLeft") {
+        showImage(currentImage - 1);
+    } else if (event.key === "ArrowRight") {
+        showImage(currentImage + 1);
+    } else if (event.key === "Escape") {
+        closeGallery();
+    }
+});
+
 randomText([
     "...",
     "A pungent odor fills the room.",
@@ -33,7 +90,7 @@ randomText([
     "Just another day.",
     "Death.",
     "Such a shame.",
-    "This must be his study.",
+    ["This must be his study.", "...", "Hard to imagine staying productive in a place like this. "],
     "...",
 ], () => {
     document.getElementById("bg-music").volume = 0.3;

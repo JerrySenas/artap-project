@@ -1,0 +1,127 @@
+.clickable {
+    position: absolute;
+    cursor: pointer;
+    border: 5px solid white;
+}
+
+#body {
+    left: 15.575%;
+    top: 40%;
+    width: 46.6%;
+    height: 60%;
+}
+
+#desk {
+    left: 77.5%;
+    top: 37.778%;
+    width: 22.5%;
+    height: 61.667%;
+}
+
+#back-button {
+    left: 88.75%;
+    top: 75%;
+    width: 11.25%;
+    height: 25%;
+}
+
+/* Body */
+
+#head {
+    left: 13%;
+    top: 28.333%;
+    width: 11.25%;
+    height: 25%;
+}
+
+#chest {
+    left: 28.5%;
+    top: 26.389%;
+    width: 10%;
+    height: 34.444%;
+}
+
+#knife {
+    left: 45.875%;
+    top: 81.389%;
+    width: 6.375%;
+    height: 18.611%;
+}
+
+/* Desk */
+
+#fan {
+    top: 42.778%;
+    width: 12.75%;
+    height: 57.222%;
+}
+
+#computer {
+    left: 22.5%;
+    top: 48.611%;
+    width: 35%;
+    height: 31.111%;
+}
+
+#cube {
+    left: 31.25%;
+    top: 83.333%;
+    width: 1.875%;
+    height: 4.167%;
+}
+
+#inhaler {
+    left: 46%;
+    top: 88.889%;
+    width: 2.625%;
+    height: 2.5%;
+}
+
+#poster {
+    left: 60.5%;
+    top: 47.778%;
+    width: 5.25%;
+    height: 22.222%;
+}
+
+#printer {
+    left: 71.25%;
+    top: 51.111%;
+    width: 25%;
+    height: 16.667%;
+}
+
+#calendar {
+    left: 75%;
+    top: 13.333%;
+    width: 12%;
+    height: 26.667%;
+}
+
+#rose {
+    left: 48%;
+    top: 36.111%;
+    width: 23.5%;
+    height: 5.556%;
+}
+
+#merch {
+    left: 24.25%;
+    top: 0%;
+    width: 39.25%;
+    height: 17.778%;
+}
+
+#lunar {
+    left: 64.875%;
+    top: 7.5%;
+    width: 9%;
+    height: 10%;
+}
+
+#blood {
+    left: 67.25%;
+    top: 82.5%;
+    width: 1px;
+    height: 1px;
+}

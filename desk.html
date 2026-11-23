@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="clickable.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap" rel="stylesheet">
+    <title>Desk</title>
+</head>
+<body>
+    <div class="screen">
+        <div class="bg" id="desk-bg">
+            <a href="room.html" class="clickable" id="back-button"></a>
+            <div class="clickable" id="fan"></div>
+            <a href="computer.html" class="clickable" id="computer"></a>
+            <div class="clickable" id="cube"></div>
+            <div class="clickable" id="inhaler"></div>
+            <div class="clickable" id="poster"></div>
+            <div class="clickable" id="printer"></div>
+            <div class="clickable" id="calendar"></div>
+            <div class="clickable" id="rose"></div>
+            <div class="clickable" id="merch"></div>
+            <div class="clickable" id="lunar"></div>
+            <div class="clickable" id="blood"></div>
+        </div>
+    </div>
+    <div id="textbox"></div>
+    <div id="cards">
+        <div id="card1">
+            <div id="card-front"></div>
+            <div id="card-back"></div>
+        </div>
+        <div id="card2">
+            <div id="card-front"></div>
+            <div id="card-back"></div>
+        </div>
+    </div>
+
+    <audio id="bg-music" loop>
+        <source src="assets/audio/bg.webm" type="audio/webm">
+    </audio>
+    <script type="module" src="scripts/room.js"></script>
+</body>
+</html>

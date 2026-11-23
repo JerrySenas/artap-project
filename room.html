@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="clickable.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&display=swap" rel="stylesheet">
@@ -12,7 +13,19 @@
 <body>
     <div class="screen">
         <div class="bg" id="home-bg">
+            <div class="clickable" id="gallery-trigger"></div>
+
+            <div id="gallery-overlay">
+                <button id="prev-image" class="arrow">&#10094;</button>
+                <div id="gallery">
+                    <img src="assets/img/tarot/00-fool.webp" alt="Image 1">
+                    <img src="assets/img/tarot/01-magician.webp" alt="Image 2">
+                    <img src="assets/img/tarot/02-high-priestess.webp" alt="Image 3">
+                </div>
+                <button id="next-image" class="arrow">&#10095;</button>
+            </div>
             <a href="body.html" class="clickable" id="body" ></a>
+            <a href="desk.html" class="clickable" id="desk" ></a>
         </div>
     </div>
     <div id="textbox"></div>
